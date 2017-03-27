@@ -30,7 +30,7 @@ class SceneMessageEvent(events.Event):
 
        sm = SceneMessageEvent(maya.api.OpenMaya.MSceneMessage.kBeforeNew)
        sm += handle_before_new_scene
-       sm.start(protected = True)
+       sm.start()
 
     to find out if the scene message is still running:
 
